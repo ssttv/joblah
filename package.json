@@ -3,7 +3,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "devDependencies": {
-    "babel-core":"^6.26.3",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.0.0",
@@ -44,6 +44,7 @@
     "react": "16.4.2",
     "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
     "react-native-elements": "^0.19.1",
-    "react-native-vector-icons": "^5.0.0"
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.11.2"
   }
 }
