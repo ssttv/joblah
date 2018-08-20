@@ -5,7 +5,7 @@ class AuthScreen extends Component {
   render() {
     return (
       <View>
-        <Text>Settings</Text>
+        <Text>SettingsScreen</Text>
         <Text>SettingsScreen</Text>
         <Text>SettingsScreen</Text>
         <Text>SettingsScreen</Text>
@@ -16,3 +16,4 @@ class AuthScreen extends Component {
 }
 
 export default SettingsScreen;
+
