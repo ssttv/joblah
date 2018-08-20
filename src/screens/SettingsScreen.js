@@ -5,7 +5,7 @@ class AuthScreen extends Component {
   render() {
     return (
       <View>
-        <Text>SettingsScreen</Text>
+        <Text>Settings</Text>
         <Text>SettingsScreen</Text>
         <Text>SettingsScreen</Text>
         <Text>SettingsScreen</Text>
