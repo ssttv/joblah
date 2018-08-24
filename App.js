@@ -8,6 +8,10 @@ import WelcomeScreen from "./src/screens/WelcomeScreen";
 
 export default class App extends React.Component {
   render() {
+    const MainNavigator = TabNavigator({
+      welcome: { screen: WelcomeScreen },
+      auth: { screen: AuthScreen }
+    });
     return (
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
