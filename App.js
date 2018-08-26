@@ -5,12 +5,19 @@ import { TabNavigator } from "react-navigation";
 
 import AuthScreen from "./src/screens/AuthScreen";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
+import DeckScreen from "./src/screens/DeckScreen";
+import MapScreen from "./src/screens/MapScreen";
 
 export default class App extends React.Component {
   render() {
     const MainNavigator = TabNavigator({
       welcome: { screen: WelcomeScreen },
-      auth: { screen: AuthScreen }
+      auth: { screen: AuthScreen },
+      main: {
+        screen: TabNavigator({
+
+        })
+      }
     });
 
     return (
