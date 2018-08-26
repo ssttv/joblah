@@ -7,6 +7,8 @@ import AuthScreen from "./src/screens/AuthScreen";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
 import DeckScreen from "./src/screens/DeckScreen";
 import MapScreen from "./src/screens/MapScreen";
+import ReviewScreen from "./src/screens/ReviewScreen";
+import SettingsScreen from "./src/screens/SettingsScreen";
 
 export default class App extends React.Component {
   render() {
