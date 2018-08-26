@@ -7,7 +7,7 @@ class ReviewScreen extends Component {
     title: "ReviewJobs",
     header: ({ navigate }) => {
       return {
-        right: <Button title="Settings" onPress={() => navigate()} />
+        right: <Button title="Settings" onPress={() => navigate("settings")} />
       };
     }
   };
