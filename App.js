@@ -20,7 +20,10 @@ export default class App extends React.Component {
           deck: { screen: DeckScreen },
           map: { screen: MapScreen },
           review: {
-            screen: StackNavigator({})
+            screen: StackNavigator({
+              review: { screen: ReviewScreen },
+              settings: { screen: SettingsScreen }
+            })
           }
         })
       }
