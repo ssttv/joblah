@@ -1,7 +1,7 @@
 import Expo from "expo";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { TabNavigator } from "react-navigation";
+import { TabNavigator, StackNavigator } from "react-navigation";
 
 import AuthScreen from "./src/screens/AuthScreen";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
@@ -16,7 +16,10 @@ export default class App extends React.Component {
       main: {
         screen: TabNavigator({
           deck: { screen: DeckScreen },
-          map: { screen: MapScreen }
+          map: { screen: MapScreen },
+          review: {
+            screen: StackNavigator({})
+          }
         })
       }
     });
