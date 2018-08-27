@@ -7,8 +7,13 @@ class ReviewScreen extends Component {
     title: "ReviewJobs",
     header: ({ navigate }) => {
       return {
-        right: 
-          (<Button title="Settings" onPress={() => navigate("settings")} />)
+        right: (
+          <Button
+            title="Settings"
+            backgroundColor="rgba(0,0,0,0)"
+            onPress={() => navigate("settings")}
+          />
+        )
       };
     }
   };
