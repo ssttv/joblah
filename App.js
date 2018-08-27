@@ -10,6 +10,16 @@ import MapScreen from "./src/screens/MapScreen";
 import ReviewScreen from "./src/screens/ReviewScreen";
 import SettingsScreen from "./src/screens/SettingsScreen";
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: "20px"
+  }
+});
+
 export default class App extends React.Component {
   render() {
     const MainNavigator = TabNavigator({
@@ -36,13 +46,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingTop: "20px"
-  }
-});

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { View, ScrollView, Text } from "react-native";
+import { View, ScrollView, StyleSheet, Text } from "react-native";
+
+const styles = StyleSheet.create({});
 
 class Slides extends Component {
   renderSlides() {
