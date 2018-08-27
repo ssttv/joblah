@@ -14,7 +14,10 @@ class ReviewScreen extends Component {
             color="rgba(0,122,255,1)"
             onPress={() => navigate("settings")}
           />
-        )
+        ),
+        style: {
+          marginTop: Platform.OS === "android" ? 24 : 0
+        }
       };
     }
   };
