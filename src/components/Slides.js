@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import { View, ScrollView, StyleSheet, Text } from "react-native";
+import { View, ScrollView, StyleSheet, Text, Dimensions } from "react-native";
+
+const SCREEN_WIDTH = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   slide: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    width: SCREEN_WIDTH
   },
   slideText: {
     fontSize: 30
