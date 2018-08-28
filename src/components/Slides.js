@@ -11,6 +11,8 @@ const styles = StyleSheet.create({
     width: SCREEN_WIDTH
   },
   slideText: {
+    fontWeight: "bold",
+    fontColot: "white",
     fontSize: 30
   }
 });
