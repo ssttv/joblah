@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { TabNavigator, StackNavigator } from "react-navigation";
 import { Provider } from "react-redux";
 
+import store from "./src/store";
 import AuthScreen from "./src/screens/AuthScreen";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
 import DeckScreen from "./src/screens/DeckScreen";
@@ -41,9 +42,11 @@ export default class App extends React.Component {
     });
 
     return (
-      <View style={styles.container}>
-        <MainNavigator />
-      </View>
+      <Provider store={store}>
+        <View style={styles.container}>
+          <MainNavigator />
+        </View>
+      </Provider>
     );
   }
 }
