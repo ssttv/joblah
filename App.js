@@ -23,22 +23,27 @@ const styles = StyleSheet.create({
 
 export default class App extends React.Component {
   render() {
-    const MainNavigator = TabNavigator({
-      welcome: { screen: WelcomeScreen },
-      auth: { screen: AuthScreen },
-      main: {
-        screen: TabNavigator({
-          deck: { screen: DeckScreen },
-          map: { screen: MapScreen },
-          review: {
-            screen: StackNavigator({
-              review: { screen: ReviewScreen },
-              settings: { screen: SettingsScreen }
-            })
-          }
-        })
+    const MainNavigator = TabNavigator(
+      {
+        welcome: { screen: WelcomeScreen },
+        auth: { screen: AuthScreen },
+        main: {
+          screen: TabNavigator({
+            deck: { screen: DeckScreen },
+            map: { screen: MapScreen },
+            review: {
+              screen: StackNavigator({
+                review: { screen: ReviewScreen },
+                settings: { screen: SettingsScreen }
+              })
+            }
+          })
+        }
+      },
+      {
+        lazyload: true
       }
-    });
+    );
 
     return (
       <Provider store={store}>
