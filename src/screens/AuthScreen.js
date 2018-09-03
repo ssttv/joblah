@@ -22,7 +22,11 @@ class AuthScreen extends Component {
   }
 }
 
+function mapStateToProps({ auth }) {
+  return {token: auth.token}
+}
+
 export default connect(
-  null,
+  mapStateToProps,
   actions
 )(AuthScreen);
