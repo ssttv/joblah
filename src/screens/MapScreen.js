@@ -14,7 +14,7 @@ class MapScreen extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <MapView style={{ flex: 1 }} />
+        <MapView region={this.state.region} style={{ flex: 1 }} />
       </View>
     );
   }
