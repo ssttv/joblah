@@ -1,6 +1,4 @@
 import axios from "axios";
 import FETCH_JOBS from "./types";
 
-export const fetchJobs = () => {
-  return async dispatch => {};
-};
+export const fetchJobs = () => async dispatch => {};
